@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -25,4 +26,5 @@
 
 .back-card li {
     padding: 4px;
+    font-size: 1.2em;
 }

@@ -1,5 +1,7 @@
 .skill {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill h4 {
@@ -7,5 +9,4 @@
     border-radius: 1rem;
     padding: 1rem;
     color: white;
-    margin: 0.5rem 0;
 }

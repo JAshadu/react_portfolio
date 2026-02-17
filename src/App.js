@@ -24,7 +24,7 @@ function App() {
           <div className='name'>
             <h1>Joseph Ashadu</h1>
             <div>
-              <h3>Full Stack Engineer</h3>
+              <h3>Full Stack Developer</h3>
               <h4>London, United Kingdom</h4>
             </div>
           </div>

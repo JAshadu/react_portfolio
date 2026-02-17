@@ -1,5 +1,8 @@
 .project-preview {
     width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-preview img {
