@@ -7,10 +7,12 @@ function Card(props) {
     return(
         <div className="card">
             <div className="front-card" style={{display: cardDisplay}}>
-                <h3>Example</h3>
+                <h3>{props.front}</h3>
             </div>
             <div className="back-card" style={{display: cardDisplay}}>
-                <p>Some stuff</p>
+                <ul>
+                    {props.back.map(item => <li>{item}</li>)}
+                </ul>
             </div>
         </div>
     )

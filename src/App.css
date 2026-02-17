@@ -75,20 +75,25 @@ nav {
     background-color: hsl(210, 35%, 35%);
     color: white;
     width: 30%;
-    padding: 3rem 2rem;
+    padding: 4rem 3rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
 
 .about-text h2 {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+
+.about-text p {
+    padding: 0.5rem 0;
 }
 
 #fact-cards {
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
 #projects {

@@ -3,6 +3,7 @@ import cvImg from './resources/cv screenshot.jpg'
 import Card from './components/Card/Card';
 import Project from './components/Project/Project';
 import projectInfo from './resources/projectInfo';
+import cardInfo from './resources/cardInfo';
 
 function App() {
   return (
@@ -34,10 +35,9 @@ function App() {
             <p>I'm currently building my skills in both Front-End and Back-End Development and I'm excited to continue growing as a developer.</p>
           </div>
           <div id='fact-cards'>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+            {cardInfo.map(card => <Card 
+            key={card.id}
+            {...card} />)}
           </div>
         </div>
         <div className='main-section' id='projects'>

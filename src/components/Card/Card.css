@@ -1,15 +1,28 @@
+.card {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .front-card, .back-card {
     background-color: hsl(210, 35%, 35%);
     color: white;
-    height: 350px;
-    width: 250px;
+    height: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .back-card {
     /*Temp*/
     display: none;
+}
+
+.back-card li {
+    padding: 4px;
 }
