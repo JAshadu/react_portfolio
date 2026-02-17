@@ -27,8 +27,9 @@ function App() {
         <div className='main-section' id='about'>
           <div className='about-text'>
             <h2>About</h2>
-            <p></p>
-            <p></p>
+            {/* Consider changing these paragraphs */}
+            <p>I started learning how to code in June 2024. At first, I thought that this would just become another hobby of mine, but soon after, I found myself wanting to change my entire career. With a love for problem-solving and a genuine interest in technology, I'm confident that pursuing software engineering was the right decision.</p>
+            <p>I'm currently building my skills in both Front-End and Back-End Development and I'm excited to continue growing as a developer.</p>
           </div>
           <div id='fact-cards'>
             <Card/>
