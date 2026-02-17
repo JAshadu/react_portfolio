@@ -1,6 +1,7 @@
 import './App.css';
 import cvImg from './resources/cv screenshot.jpg'
 import Card from './components/Card/Card';
+import Project from './components/Project/Project';
 
 function App() {
   return (
@@ -40,7 +41,11 @@ function App() {
         </div>
         <div className='main-section' id='projects'>
           <h2>Projects</h2>
-          <div className='my-work'></div>
+          <div className='my-work'>
+            <Project/>
+            <Project/>
+            <Project/>
+          </div>
         </div>
         <div className='main-section' id='cv'>
           <h2>My CV</h2>
