@@ -62,6 +62,13 @@ nav {
     text-align: start;
 }
 
+#fact-cards {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 #cv {
     justify-content: space-evenly;
     align-items: center;

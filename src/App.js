@@ -1,5 +1,6 @@
 import './App.css';
 import cvImg from './resources/cv screenshot.jpg'
+import Card from './components/Card/Card';
 
 function App() {
   return (
@@ -26,9 +27,15 @@ function App() {
         <div className='main-section' id='about'>
           <div className='about-text'>
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p></p>
+            <p></p>
           </div>
-          <div id='flash-cards'></div>
+          <div id='fact-cards'>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+          </div>
         </div>
         <div className='main-section' id='projects'>
           <h2>Projects</h2>

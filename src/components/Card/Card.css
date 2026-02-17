@@ -1,0 +1,15 @@
+.front-card, .back-card {
+    background-color: hsl(210, 35%, 35%);
+    color: white;
+    height: 350px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-card {
+    /*Temp*/
+    display: none;
+}
