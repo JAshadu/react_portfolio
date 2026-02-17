@@ -1,5 +1,11 @@
+.project-preview {
+    width: 28%;
+}
+
 .project-preview img {
     /*TEMP*/
     border: 4px solid hsl(210, 35%, 35%);
     border-radius: 1rem;
+    width: 100%;
+    min-height: 360px;
 }

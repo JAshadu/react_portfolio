@@ -2,6 +2,7 @@ import './App.css';
 import cvImg from './resources/cv screenshot.jpg'
 import Card from './components/Card/Card';
 import Project from './components/Project/Project';
+import projectInfo from './resources/projectInfo';
 
 function App() {
   return (
@@ -42,9 +43,9 @@ function App() {
         <div className='main-section' id='projects'>
           <h2>Projects</h2>
           <div className='my-work'>
-            <Project/>
-            <Project/>
-            <Project/>
+            {projectInfo.map(project => <Project 
+            key={project.id}
+            {...project} />)}
           </div>
         </div>
         <div className='main-section' id='cv'>
@@ -56,7 +57,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='main-section' id='contact'></div>
+        <div className='main-section' id='contact'>
+          <h2>Contact</h2>
+        </div>
       </main>
       <footer></footer>
     </div>
