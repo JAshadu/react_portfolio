@@ -4,6 +4,8 @@ import Card from './components/Card/Card';
 import Project from './components/Project/Project';
 import projectInfo from './resources/projectInfo';
 import cardInfo from './resources/cardInfo';
+import TechSkill from './components/TechSkill/TechSkill';
+import techSkills from './resources/techSkills';
 
 function App() {
   return (
@@ -19,12 +21,17 @@ function App() {
       </header>
       <main>
         <div className='main-section' id='intro'>
-          <div>
+          <div className='name'>
             <h1>Joseph Ashadu</h1>
-            <div className='position'>
+            <div>
               <h3>Full Stack Engineer</h3>
               <h4>London, United Kingdom</h4>
             </div>
+          </div>
+          <div className='tech-skills'>
+            {techSkills.map(skill => <TechSkill
+            key={skill.id}
+            {...skill} />)}
           </div>
         </div>
         <div className='main-section' id='about'>

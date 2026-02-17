@@ -1,0 +1,11 @@
+.skill {
+    display: flex;
+}
+
+.skill h4 {
+    background-color: hsl(210, 35%, 45%);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    margin: 0.5rem 0;
+}
