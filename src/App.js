@@ -14,9 +14,13 @@ function App() {
       </header>
       <main>
         <div className='main-section' id='intro'>
-          <h1>Joseph Ashadu</h1>
-          <h3>Full Stack Engineer</h3>
-          <h4>London, United Kingdom</h4>
+          <div>
+            <h1>Joseph Ashadu</h1>
+            <div className='position'>
+              <h3>Full Stack Engineer</h3>
+              <h4>London, United Kingdom</h4>
+            </div>
+          </div>
         </div>
         <div className='main-section' id='about'>
           <div className='about-text'>

@@ -1,3 +1,19 @@
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -8,4 +24,36 @@ header {
 nav {
     display: flex;
     gap: 2rem;
+}
+
+.main-section {
+    font-size: 16px;
+    display: flex;
+    padding: 2rem 0;
+}
+
+#intro {
+    background-image: url('./resources/blue\ background\ with\ crack.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(210, 35%, 35%);
+    justify-content: center;
+    height: 90vh;
+}
+
+#intro div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: end;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
+
+#intro .position {
+    display: flex;
+    text-align: start;
 }
