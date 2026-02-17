@@ -14,6 +14,10 @@ h4 {
     font-size: 1em;
 }
 
+a {
+    font-size: 1.25em;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -56,4 +60,38 @@ nav {
 #intro .position {
     display: flex;
     text-align: start;
+}
+
+#cv {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(210, 35%, 35%);
+    color: white;
+}
+
+#cv-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#cv-preview img {
+    max-height: 600px;
+}
+
+.view-cv {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.view-cv a {
+    background-color: hsl(210, 35%, 35%);
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
 }

@@ -1,4 +1,5 @@
 import './App.css';
+import cvImg from './resources/cv screenshot.jpg'
 
 function App() {
   return (
@@ -34,9 +35,12 @@ function App() {
           <div className='my-work'></div>
         </div>
         <div className='main-section' id='cv'>
-          <h2>CV</h2>
+          <h2>My CV</h2>
           <div id='cv-preview'>
-            <button>View CV</button>
+            <img src={cvImg}></img>
+            <div className='view-cv'>
+              <a>View CV</a>
+            </div>
           </div>
         </div>
         <div className='main-section' id='contact'></div>
