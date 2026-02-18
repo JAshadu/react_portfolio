@@ -1,28 +1,42 @@
-const techSkills = [
-    {
-        id: 1,
-        skill: 'HTML',
-    },
-    {
-        id: 2,
-        skill: 'CSS',
-    },
-    {
-        id: 3,
-        skill: 'JavaScript',
-    },
-    {
-        id: 4,
-        skill: 'React',
-    },
-    {
-        id: 5,
-        skill: 'Redux',
-    },
-    {
-        id: 6,
-        skill: 'Back-End (currently learning)',
-    },
-]
+import projectInfo from "./projectInfo";
 
+const projectSkills = [...new Set(projectInfo.flatMap(project => project.skills))]
+
+const techSkills = []
+
+const addSkillstoArray = () => {
+    for(let i = 0; i < projectSkills.length; i++) {
+        techSkills.push({
+            id: i+1,
+            skill: projectSkills[i]
+        })
+    }
+}
+
+addSkillstoArray()
+/*
+const newSkills = ['Redux', 'Back-End']
+const currentlyLearning = []
+
+const addLearningText = () => {
+    for(let j = 0; j < newSkills.length; j++) {
+        currentlyLearning.push(newSkills[j] + ' (Currently learning)')
+    }
+}
+
+addLearningText()
+
+const addCurrentlyLearning = () => {
+    for(let k = 0; k < currentlyLearning.length; k++) {
+        techSkills.push({
+            id: techSkills.length+k,
+            skill: currentlyLearning[k]
+        })
+    }
+}
+
+addCurrentlyLearning()
+
+console.log(techSkills)
+*/
 export default techSkills;
