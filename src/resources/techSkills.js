@@ -29,7 +29,7 @@ addLearningText()
 const addCurrentlyLearning = () => {
     for(let k = 0; k < currentlyLearning.length; k++) {
         techSkills.push({
-            id: techSkills.length+k,
+            id: techSkills.length+k, (SOMETHING WRONG HERE, USE CONSOLE LOG TO CHECK!)
             skill: currentlyLearning[k]
         })
     }
