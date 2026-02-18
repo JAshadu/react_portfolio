@@ -20,6 +20,7 @@ h4 {
 
 a {
     font-size: 1.5em;
+    text-decoration: none;
 }
 
 p {
@@ -32,17 +33,22 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    color: white;
 }
 
 #home {
     padding: 2rem;
+    font-size: 2rem;
+    color: white;
 }
 
 nav {
     display: flex;
     gap: 2rem;
     padding: 2rem;
+}
+
+nav a {
+    color: white;
 }
 
 .main-section {
@@ -78,7 +84,7 @@ nav {
 }
 
 .name h1 {
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 3rem 0;
 }
 
 .name div {
@@ -86,10 +92,11 @@ nav {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    margin-bottom: 0.5rem;
 }
 
 .name div h4 {
-    margin: 0.5rem 0;
+    padding-top: 0.5rem;
 }
 
 .tech-skills {

@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        <a id='home'>{/*Consider having a logo, <img src='https://placehold.co/50'></img>*/}JAshadu</a>
+        <a id='home' href='#'>{/*Consider having a logo, <img src='https://placehold.co/50'></img>*/}JAshadu</a>
         <nav>
-          <a>About</a>
-          <a>Projects</a>
-          <a>CV</a>
-          <a>Contact</a>
+          <a href='#about'>About</a>
+          <a href='#projects'>Projects</a>
+          <a href='#cv'>CV</a>
+          <a href='#contact'>Contact</a>
         </nav>
       </header>
       <main>
