@@ -7,6 +7,7 @@ import cardInfo from './resources/cardInfo';
 import TechSkill from './components/TechSkill/TechSkill';
 import techSkills from './resources/techSkills';
 import { useState } from 'react';
+import cvLink from './resources/Joseph Ashadu (CV).pdf'
 
 function App() {
   const [header, setHeader] = useState(false)
@@ -70,12 +71,12 @@ function App() {
           </div>
         </div>
         <div className='main-section' id='cv'>
-          <h2>My CV</h2>
-          <div id='cv-preview'>
+          <div className='cv-text'>
+            <h2>My CV</h2>
+            <a href={cvLink}>View CV</a>
+          </div>
+          <div className='cv-preview'>
             <img src={cvImg}></img>
-            <div className='view-cv'>
-              <a>View CV</a>
-            </div>
           </div>
         </div>
         <div className='main-section' id='contact'>

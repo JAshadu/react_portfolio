@@ -21,6 +21,7 @@ h4 {
 a {
     font-size: 1.5em;
     text-decoration: none;
+    color: white;
 }
 
 p {
@@ -45,7 +46,6 @@ header.active {
 #home {
     padding: 2rem;
     font-size: 2rem;
-    color: white;
 }
 
 header.active #home {
@@ -56,10 +56,6 @@ nav {
     display: flex;
     gap: 2rem;
     padding: 2rem;
-}
-
-nav a {
-    color: white;
 }
 
 header.active nav a {
@@ -182,29 +178,31 @@ header.active nav a {
     color: white;
 }
 
-#cv-preview {
+.cv-text {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 30%;
+    gap: 2rem;
 }
 
-#cv-preview img {
-    max-height: 600px;
-}
-
-.view-cv {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.view-cv a {
-    background-color: hsl(210, 35%, 35%);
+.cv-text a {
+    background-color: white;
     padding: 1rem;
-    width: 50%;
+    width: 100%;
     text-align: center;
+    color: hsl(210, 35%, 35%);
+}
+
+.cv-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    box-shadow: 0 0 1rem rgb(128, 128, 128);
+}
+
+.cv-preview img {
+    height: 100%;
 }
