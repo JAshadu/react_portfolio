@@ -44,7 +44,7 @@ header.active {
 }
 
 #home {
-    padding: 2rem;
+    margin: 0 2rem;
     font-size: 2rem;
 }
 
@@ -189,10 +189,13 @@ header.active nav a {
 
 .cv-text a {
     background-color: white;
-    padding: 1rem;
-    width: 100%;
+    width: 90%;
+    padding: 1rem 0;
     text-align: center;
     color: hsl(210, 35%, 35%);
+    font-size: 1.6rem;
+    border: 1px solid hsl(210, 35%, 35%);
+    border-radius: 2rem;
 }
 
 .cv-preview {
@@ -227,7 +230,7 @@ header.active nav a {
     color: hsl(210, 35%, 35%);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .contact-text p {
@@ -264,4 +267,25 @@ header.active nav a {
 #submit {
     width: 35%;
     height: 2.5rem;
+    color: hsl(210, 35%, 35%);
+    background-color: white;
+    border: 1px solid hsl(210, 35%, 35%);
+    border-radius: 2rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    /*#home:hover, header.active #home:hover {
+        color: hsl(210, 45%, 30%);     REMOVE IF USING LOGO
+    }*/
+
+    nav a:hover, header.active nav a:hover {
+        color: hsl(210, 50%, 25%);
+    }
+
+    .cv-text a:hover, #submit:hover {
+        cursor: pointer;
+        background-color: hsl(210, 40%, 40%);
+        color: white;
+        border: 1px solid white;
+    }
 }

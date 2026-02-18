@@ -28,3 +28,13 @@
     padding: 4px;
     font-size: 1.2em;
 }
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        cursor: pointer;
+    }
+
+    .front-card:hover, .back-card:hover {
+        background-color: hsl(210, 40%, 40%);
+    }
+}
