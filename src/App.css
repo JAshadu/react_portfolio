@@ -76,7 +76,7 @@ header.active nav a {
     background-color: hsl(210, 35%, 35%);
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 94vh;
     flex-direction: column;
     gap: 4rem;
     padding: 2rem 0;
@@ -247,13 +247,13 @@ header.active nav a {
 }
 
 #name, #email, #message, #submit {
-    /*change once final font is found*/
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-size: 1.2em;
 }
 
 #name, #email, #message {
     width: 60%;
+    padding: 4px;
 }
 
 #name, #email {
