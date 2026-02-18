@@ -80,7 +80,18 @@ function App() {
           </div>
         </div>
         <div className='main-section' id='contact'>
-          <h2>Contact</h2>
+          <div className='contact-text'>
+            <h2>Contact</h2>
+            <p>Want to get in touch? Send me an email or follow any of my socials below!</p>
+          </div>
+          <div className='form'>
+            <form id='email-form'>
+              <input type='text' id='name' name='name' placeholder='Name' required></input>
+              <input type='email' id='email' name='email' placeholder='Email' required></input>
+              <textarea id='message' name='message' placeholder='Your Message...' required></textarea>
+              <input type='submit' id='submit' value={"Send"}></input>
+            </form>
+          </div>
         </div>
       </main>
       <footer></footer>
