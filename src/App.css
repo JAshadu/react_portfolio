@@ -33,12 +33,23 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 1;
+}
+
+header.active {
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.8);
 }
 
 #home {
     padding: 2rem;
     font-size: 2rem;
     color: white;
+}
+
+header.active #home {
+    color: black;
 }
 
 nav {
@@ -51,10 +62,14 @@ nav a {
     color: white;
 }
 
+header.active nav a {
+    color: black;
+}
+
 .main-section {
     font-size: 16px;
     display: flex;
-    padding: 2rem 0;
+    padding: 7rem 0;
 }
 
 #intro {
@@ -68,6 +83,7 @@ nav a {
     height: 90vh;
     flex-direction: column;
     gap: 4rem;
+    padding: 2rem 0;
 }
 
 .name {

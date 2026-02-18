@@ -6,11 +6,25 @@ import projectInfo from './resources/projectInfo';
 import cardInfo from './resources/cardInfo';
 import TechSkill from './components/TechSkill/TechSkill';
 import techSkills from './resources/techSkills';
+import { useState } from 'react';
 
 function App() {
+  const [header, setHeader] = useState(false)
+
+  const changeHeaderBackground = () => {
+    if(window.scrollY >= 420){
+        setHeader(true);
+    }
+    else{
+        setHeader(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeHeaderBackground)
+
   return (
     <div className="App">
-      <header>
+      <header className={header ? 'header active' : 'header'}>
         <a id='home' href='#'>{/*Consider having a logo, <img src='https://placehold.co/50'></img>*/}JAshadu</a>
         <nav>
           <a href='#about'>About</a>
