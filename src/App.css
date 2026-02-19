@@ -41,6 +41,7 @@ header.active {
     background-color: white;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.8);
+    font-weight: 450;
 }
 
 #home {
@@ -55,7 +56,7 @@ header.active #home {
 nav {
     display: flex;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 header.active nav a {
@@ -337,9 +338,9 @@ footer div {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    /*#home:hover, header.active #home:hover {
-        color: hsl(210, 40%, 40%);     REMOVE IF USING LOGO
-    }*/
+    #home span:hover, header.active #home span:hover {
+        color: hsl(210, 40%, 40%);
+    }
 
     nav a:hover, header.active nav a:hover {
         color: hsl(210, 40%, 40%);

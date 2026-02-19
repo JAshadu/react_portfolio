@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header className={header ? 'header active' : 'header'}>
-        <a id='home' href='#'>{/*Consider having a logo, <img src='https://placehold.co/50'></img>*/}JAshadu</a>
+        <a id='home' href='#'><span>J</span><span>A</span><span>s</span><span>h</span><span>a</span><span>d</span><span>u</span></a>
         <nav>
           <a href='#about'>About</a>
           <a href='#projects'>Projects</a>
