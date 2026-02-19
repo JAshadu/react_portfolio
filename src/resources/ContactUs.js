@@ -3,6 +3,15 @@ import emailjs from '@emailjs/browser';
 
 export const ContactUs = () => {
   const form = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
+
+  const clearForm = () => {
+    nameRef.current.value = '';
+    emailRef.current.value = '';
+    messageRef.current.value = '';
+  }
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,6 +23,7 @@ export const ContactUs = () => {
       .then(
         () => {
           alert('Message recieved!');
+          clearForm()
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -24,9 +34,9 @@ export const ContactUs = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} id='email-form'>
-        <input type='text' id='name' name='name' placeholder='Name' required></input>
-        <input type='email' id='email' name='email' placeholder='Email' required></input>
-        <textarea id='message' name='message' placeholder='Your Message...' required></textarea>
+        <input ref={nameRef} type='text' id='name' name='name' placeholder='Name' required></input>
+        <input ref={emailRef} type='email' id='email' name='email' placeholder='Email' required></input>
+        <textarea ref={messageRef} id='message' name='message' placeholder='Your Message...' required></textarea>
         <input type='submit' id='submit' value={"Send"}></input>
     </form>
   );
