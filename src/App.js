@@ -31,12 +31,12 @@ function App() {
   return (
     <div className="App">
       <header className={header ? 'header active' : 'header'}>
-        <a id='home' href='#'><span>J</span><span>A</span><span>s</span><span>h</span><span>a</span><span>d</span><span>u</span></a>
+        <a id='home' href='/#'><span>J</span><span>A</span><span>s</span><span>h</span><span>a</span><span>d</span><span>u</span></a>
         <nav>
-          <a href='#about'>About</a>
-          <a href='#projects'>Projects</a>
-          <a href='#cv'>CV</a>
-          <a href='#contact'>Contact</a>
+          <a href='/#about'>About</a>
+          <a href='/#projects'>Projects</a>
+          <a href='/#cv'>CV</a>
+          <a href='/#contact'>Contact</a>
         </nav>
       </header>
       <main>
@@ -81,7 +81,7 @@ function App() {
             <a href={cvLink}>View CV</a>
           </div>
           <div className='cv-preview'>
-            <img src={cvImg}></img>
+            <img src={cvImg} alt='Preview of CV'></img>
           </div>
         </div>
         <div className='main-section' id='contact'>
@@ -96,16 +96,16 @@ function App() {
       </main>
       <footer>
         <div className='my-email'>
-          <img src={emailBanner}></img>
+          <img src={emailBanner} alt='Email Icon'></img>
           <h4>jashadu123@gmail.com</h4>
         </div>
         <div>
-          <a href='#' id='back-to-top'>Back To Top</a>
+          <a href='/#' id='back-to-top'>Back To Top</a>
         </div>
         <div className='my-socials'>
-          <a><img src={linkedinImg}></img></a>
-          <a><img src={githubImg} id='github-logo'></img></a>
-          <a><img src={instaImg}></img></a>
+          <a><img src={linkedinImg} alt='Link to LinkedIn Profile'></img></a>
+          <a><img src={githubImg} id='github-logo' alt='Link to GitHub Profile'></img></a>
+          <a><img src={instaImg} alt='Link to Instagram Profile'></img></a>
         </div>
       </footer>
     </div>
