@@ -1,31 +1,35 @@
 .card {
     width: 45%;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem;
 }
 
 .front-card, .back-card {
     background-color: hsl(210, 35%, 35%);
     color: white;
-    height: 400px;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
     border-radius: 0.5rem;
 }
 
+.front-card ul, .back-card ul {
+    padding: 0 12px;
+}
+
 .back-card {
-    /*Temp*/
     display: none;
 }
 
 .back-card li {
-    padding: 4px;
+    padding: 8px 0;
     font-size: 1.2em;
 }
 

@@ -130,18 +130,18 @@ header.active nav a {
 .about-text {
     background-color: hsl(210, 35%, 35%);
     color: white;
-    width: 30%;
-    padding: 4rem 3rem;
+    width: 40%;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    padding-bottom: 2rem;
 }
 
 .about-text h2 {
-    padding-bottom: 4rem;
+    padding: 3rem 2rem 3rem 2rem;
 }
 
 .about-text p {
-    padding: 0.5rem 0;
+    padding: 1rem 2rem;
 }
 
 #fact-cards {
@@ -150,6 +150,7 @@ header.active nav a {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 #projects {
@@ -251,6 +252,7 @@ header.active nav a {
     align-items: center;
     gap: 2rem;
     width: 100%;
+    padding: 1.5rem 0;
 }
 
 #name, #email, #message, #submit {
@@ -352,6 +354,10 @@ footer div {
         color: white;
         border: 1px solid white;
         box-shadow: 0 0 4px hsl(0, 0%, 50%);
+    }
+
+    .cv-text a:hover {
+        border: 1px solid transparent;
     }
 
     #github-logo:hover {
