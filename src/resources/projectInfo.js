@@ -1,6 +1,7 @@
 import mixedMessagesImg from './mixedMessages_ss.jpeg'
 import calculatorImg from './calculator_ss.png'
-import jammmingImg from './jammming fav copy.jpg'
+import jammmingImg from './jammming ss copy.png'
+import portfolioImg from './portfolio ss.jpeg'
 
 const projectInfo = [
     {
@@ -30,7 +31,7 @@ const projectInfo = [
     {
         id: 4,
         title: 'Portfolio',
-        img: calculatorImg,
+        img: portfolioImg,
         link: 'https://jashadu.netlify.app/',
         description: 'My portfolio.',
         skills: ['HTML', 'CSS', 'JavaScript', 'React'],

@@ -209,7 +209,7 @@ header.active nav a {
     justify-content: center;
     align-items: center;
     height: 450px;
-    box-shadow: 0 0 1rem rgb(128, 128, 128);
+    box-shadow: 0 0 1rem hsl(0, 0%, 50%);
 }
 
 .cv-preview img {
