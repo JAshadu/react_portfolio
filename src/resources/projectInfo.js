@@ -1,5 +1,6 @@
 import mixedMessagesImg from './mixedMessages_ss.jpeg'
 import calculatorImg from './calculator_ss.png'
+import jammmingImg from './jammming fav copy.jpg'
 
 const projectInfo = [
     {
@@ -19,15 +20,15 @@ const projectInfo = [
         skills: ['HTML', 'CSS', 'JavaScript'],
     },
     {
-        id: 4,
+        id: 3,
         title: 'Jammming',
-        img: calculatorImg,
+        img: jammmingImg,
         link: 'https://jaa-jammming.netlify.app/',
         description: 'Search for songs from Spotify and add them to your playlist.',
         skills: ['HTML', 'CSS', 'JavaScript', 'APIs', 'React'],
     },
     {
-        id: 5,
+        id: 4,
         title: 'Portfolio',
         img: calculatorImg,
         link: 'https://jashadu.netlify.app/',
