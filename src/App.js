@@ -12,6 +12,7 @@ import linkedinImg from './resources/linkedin logo copy.png';
 import githubImg from './resources/github trnsp copy.png';
 import instaImg from './resources/insta logo copy.png';
 import emailBanner from './resources/white email banner.svg'
+import { ContactUs } from './resources/ContactUs';
 
 function App() {
   const [header, setHeader] = useState(false)
@@ -89,12 +90,7 @@ function App() {
             <p>Want to get in touch? Send me an email or follow any of my socials below!</p>
           </div>
           <div className='form'>
-            <form id='email-form'>
-              <input type='text' id='name' name='name' placeholder='Name' required></input>
-              <input type='email' id='email' name='email' placeholder='Email' required></input>
-              <textarea id='message' name='message' placeholder='Your Message...' required></textarea>
-              <input type='submit' id='submit' value={"Send"}></input>
-            </form>
+            <ContactUs/>
           </div>
         </div>
       </main>
