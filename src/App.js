@@ -1,5 +1,5 @@
 import './App.css';
-import cvImg from './resources/cv screenshot.jpg'
+import cvImg from './resources/cv screenshot.jpg';
 import Card from './components/Card/Card';
 import Project from './components/Project/Project';
 import projectInfo from './resources/projectInfo';
@@ -7,7 +7,11 @@ import cardInfo from './resources/cardInfo';
 import TechSkill from './components/TechSkill/TechSkill';
 import techSkills from './resources/techSkills';
 import { useState } from 'react';
-import cvLink from './resources/Joseph Ashadu (CV).pdf'
+import cvLink from './resources/Joseph Ashadu (CV).pdf';
+import linkedinImg from './resources/linkedin logo copy.png';
+import githubImg from './resources/github trnsp copy.png';
+import instaImg from './resources/insta logo copy.png';
+import emailBanner from './resources/white email banner.svg'
 
 function App() {
   const [header, setHeader] = useState(false)
@@ -94,7 +98,20 @@ function App() {
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div className='my-email'>
+          <img src={emailBanner}></img>
+          <h4>jashadu123@gmail.com</h4>
+        </div>
+        <div>
+          <a href='#' id='back-to-top'>Back To Top</a>
+        </div>
+        <div className='my-socials'>
+          <a><img src={linkedinImg}></img></a>
+          <a><img src={githubImg} id='github-logo'></img></a>
+          <a><img src={instaImg}></img></a>
+        </div>
+      </footer>
     </div>
   );
 }
