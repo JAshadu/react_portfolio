@@ -103,9 +103,9 @@ function App() {
           <a href='/#' id='back-to-top'>Back To Top</a>
         </div>
         <div className='my-socials'>
-          <a><img src={linkedinImg} alt='Link to LinkedIn Profile'></img></a>
-          <a><img src={githubImg} id='github-logo' alt='Link to GitHub Profile'></img></a>
-          <a><img src={instaImg} alt='Link to Instagram Profile'></img></a>
+          <a href='https://www.linkedin.com/in/joseph-a-9360763a1'><img src={linkedinImg} alt='Link to LinkedIn Profile'></img></a>
+          <a href='https://github.com/JAshadu'><img src={githubImg} id='github-logo' alt='Link to GitHub Profile'></img></a>
+          <a href='https://www.instagram.com/jb.ash_'><img src={instaImg} alt='Link to Instagram Profile'></img></a>
         </div>
       </footer>
     </div>
