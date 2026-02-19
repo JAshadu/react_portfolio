@@ -1,18 +1,18 @@
 import './App.css';
-import cvImg from './resources/cv screenshot.jpg';
+import { useState } from 'react';
+import TechSkill from './components/TechSkill/TechSkill';
 import Card from './components/Card/Card';
 import Project from './components/Project/Project';
+import { ContactUs } from './resources/ContactUs';
+import techSkills from './resources/techSkills';
 import projectInfo from './resources/projectInfo';
 import cardInfo from './resources/cardInfo';
-import TechSkill from './components/TechSkill/TechSkill';
-import techSkills from './resources/techSkills';
-import { useState } from 'react';
+import cvImg from './resources/cv screenshot.jpg';
 import cvLink from './resources/Joseph Ashadu (CV).pdf';
+import emailBanner from './resources/white email banner.svg';
 import linkedinImg from './resources/linkedin logo copy.png';
 import githubImg from './resources/github trnsp copy.png';
 import instaImg from './resources/insta logo copy.png';
-import emailBanner from './resources/white email banner.svg'
-import { ContactUs } from './resources/ContactUs';
 
 function App() {
   const [header, setHeader] = useState(false)
