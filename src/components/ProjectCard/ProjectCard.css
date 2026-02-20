@@ -1,12 +1,15 @@
-.project-card-border {
+.project-card-container {
     background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 2;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 .project-card {
@@ -36,7 +39,7 @@
 .project-card span {
     position: absolute;
     right: 0;
-    padding: 0.8rem 1.5rem;
+    margin: 0.8rem 1.5rem;
     font-weight: 600;
     font-size: 1.8rem;
 }
@@ -94,4 +97,10 @@
 
 .project-card p {
     padding: 0 0 3rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .project-card span:hover {
+        cursor: pointer;
+    }
 }
