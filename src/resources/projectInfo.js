@@ -32,7 +32,7 @@ const projectInfo = [
         id: 4,
         title: 'Portfolio',
         img: portfolioImg,
-        link: 'https://jashadu.netlify.app/',
+        link: '/#',
         description: 'My portfolio.',
         skills: ['HTML', 'CSS', 'JavaScript', 'React'],
     },
