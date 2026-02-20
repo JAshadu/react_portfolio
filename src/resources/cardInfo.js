@@ -7,7 +7,7 @@ const cardInfo = [
     {
         id: 2,
         front: 'Soft Skills / Traits',
-        back: [`Quick learner`, `Creative thinker`, `Can work well independently and as part of a team`, `High attention to detail`, `Easily adapt to change`, `Great work ethic`]
+        back: [`Fast learner`, `Creative problem-solver`, `Performs well independently and as part of a team`, `High attention to detail`, `Quick to adapt to changing environments`, `Strong work ethic`]
     },
     {
         id: 3,

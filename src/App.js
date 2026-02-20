@@ -57,8 +57,7 @@ function App() {
         <div className='main-section' id='about'>
           <div className='about-text'>
             <div className='journey'>
-              <h2>About</h2>
-              {/* Consider changing these paragraphs */}
+              <h2>About Me...</h2>
               <p>I started learning how to code in June 2024. At first, I thought that this would just become another hobby of mine, but soon after, I found myself wanting to change my entire career. With a love for problem-solving and a genuine interest in technology, I'm confident that pursuing software engineering was the right decision.</p>
               <p>I'm currently building my skills in both Front-End and Back-End Development and I'm excited to continue growing as a developer.</p>
             </div>
@@ -82,7 +81,7 @@ function App() {
           </div>
         </div>
         <div className='main-section' id='projects'>
-          <h2>Projects</h2>
+          <h2>My Projects...</h2>
           <div className='my-work'>
             {projectInfo.map(project => <Project 
             key={project.id}
@@ -100,7 +99,7 @@ function App() {
         </div>
         <div className='main-section' id='contact'>
           <div className='contact-text'>
-            <h2>Contact</h2>
+            <h2>Say hello...</h2>
             <p>Want to get in touch? Send me an email or follow any of my socials below!</p>
           </div>
           <div className='form'>

@@ -34,7 +34,7 @@ const projectInfo = [
             project: 'https://jaa-jammming.netlify.app/',
             github: '',
         },
-        description: 'Search for songs from Spotify and add them to your playlist.',
+        description: 'Search for songs from Spotify, and add them to a new playlist in your library.',
         skills: ['HTML', 'CSS', 'JavaScript', 'APIs', 'React'],
     },
     {

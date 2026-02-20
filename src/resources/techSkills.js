@@ -25,18 +25,5 @@ const addLearningText = () => {
 }
 
 addLearningText()
-/*
-const addCurrentlyLearning = () => {
-    for(let k = 0; k < currentlyLearning.length; k++) {
-        techSkills.push({
-            id: k+techSkills.length, (SOMETHING WRONG HERE, USE CONSOLE LOG TO CHECK!)
-            skill: currentlyLearning[k]
-        })
-    }
-}
 
-addCurrentlyLearning()
-
-console.log(techSkills)
-*/
 export default techSkills;
