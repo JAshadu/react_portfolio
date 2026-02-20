@@ -1,10 +1,7 @@
-import { useRef } from 'react';
 import './ProjectCard.css';
 import TechSkill from '../TechSkill/TechSkill';
 
 function ProjectCard(props) {
-    const closeRef = useRef()
-
     const closePortfolioCard = (e) => {
         if(props.links.project === '/#') {
             props.closeCard()
@@ -15,7 +12,7 @@ function ProjectCard(props) {
         <div className='project-card-container'>
             <div className='project-card'>
                 <h3>{props.title}</h3>
-                <span ref={closeRef} onClick={props.closeCard}>X</span>
+                <span onClick={props.closeCard}>X</span>
                 <div className='project-card-middle'>
                     <div className='project-links'>
                         {props.links.project && (<a className='project-link' href={props.links.project} onClick={closePortfolioCard}>Open Project</a>)}
