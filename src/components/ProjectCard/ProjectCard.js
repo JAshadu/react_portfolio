@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import './ProjectCard.css';
+import TechSkill from '../TechSkill/TechSkill';
 
 function ProjectCard(props) {
     const closeRef = useRef()
@@ -21,7 +22,9 @@ function ProjectCard(props) {
                         {props.links.github && (<a className='project-github' href={props.links.github} target='_blank' rel='noopener noreferrer'>GitHub Repository</a>)}
                     </div>
                     <img src={props.img} alt={`Preview of ${props.title} project`}></img>
-                    <div className='project-skills'>Import Tech Stack Component</div>
+                    <div className='project-skills'>
+                        {props.skills.map(skill => <TechSkill skill={skill} />)}
+                    </div>
                 </div>
                 <p>{props.description}</p>
             </div>

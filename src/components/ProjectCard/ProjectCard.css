@@ -94,6 +94,24 @@
     align-items: center;
 }
 
+.project-skills {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    gap: 2px;
+}
+
+.project-skills .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-skills .skill h4 {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 12px;
+}
+
 .project-card p {
     padding: 0 0 3rem;
 }
