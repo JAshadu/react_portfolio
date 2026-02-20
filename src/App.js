@@ -56,10 +56,24 @@ function App() {
         </div>
         <div className='main-section' id='about'>
           <div className='about-text'>
-            <h2>About</h2>
-            {/* Consider changing these paragraphs */}
-            <p>I started learning how to code in June 2024. At first, I thought that this would just become another hobby of mine, but soon after, I found myself wanting to change my entire career. With a love for problem-solving and a genuine interest in technology, I'm confident that pursuing software engineering was the right decision.</p>
-            <p>I'm currently building my skills in both Front-End and Back-End Development and I'm excited to continue growing as a developer.</p>
+            <div className='journey'>
+              <h2>About</h2>
+              {/* Consider changing these paragraphs */}
+              <p>I started learning how to code in June 2024. At first, I thought that this would just become another hobby of mine, but soon after, I found myself wanting to change my entire career. With a love for problem-solving and a genuine interest in technology, I'm confident that pursuing software engineering was the right decision.</p>
+              <p>I'm currently building my skills in both Front-End and Back-End Development and I'm excited to continue growing as a developer.</p>
+            </div>
+            <div className='about-course'>
+              <div className='codecademy'>
+                <h3>Current Course: <a href='https://www.codecademy.com/learn/paths/full-stack-engineer-career-path' target='_blank' rel='noopener noreferrer'>Full-Stack Engineer Codecademy</a></h3>
+                <div className='progress'>
+                  <h4>Progress: <span>52% Complete</span></h4>
+                  <div className='progress-bar'>
+                    <div id='current-progress'></div>
+                  </div>
+                  <em>*Last updated: 20th February 2026</em>
+                </div>
+              </div>
+            </div>
           </div>
           <div id='fact-cards'>
             {cardInfo.map(card => <Card 

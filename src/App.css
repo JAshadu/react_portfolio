@@ -128,20 +128,96 @@ header.active nav a {
 }
 
 .about-text {
+    width: 50%;
+}
+
+.journey {
     background-color: hsl(210, 35%, 35%);
     color: white;
-    width: 40%;
+    width: 80%;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     padding-bottom: 2rem;
 }
 
-.about-text h2 {
+.journey h2 {
     padding: 3rem 2rem 3rem 2rem;
 }
 
-.about-text p {
+.journey p {
     padding: 1rem 2rem;
+}
+
+.about-course {
+    color: hsl(210, 35%, 35%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+}
+
+.codecademy {
+    border: 1px solid hsl(210, 35%, 35%);
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem hsl(0, 0%, 50%);
+    margin: 2rem 0;
+}
+
+.codecademy h3 {
+    text-align: center;
+    width: 90%;
+    padding: 4rem 2rem 2rem;
+    font-weight: 400;
+}
+
+.codecademy a {
+    color: hsl(210, 35%, 35%);
+    text-decoration: 2px underline solid hsl(210, 35%, 35%);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 80%;
+    padding: 0 0 4rem;
+}
+
+.progress h4 {
+    font-weight: 400;
+}
+
+.progress h4 span {
+    font-weight: 500;
+}
+
+.progress-bar {
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+#current-progress {
+    background-color: hsl(210, 35%, 35%);
+    width: 53%;
+    height: 100%;
+}
+
+.progress em {
+    padding-top: 6px;
 }
 
 #fact-cards {
@@ -346,6 +422,11 @@ footer div {
 
     nav a:hover, header.active nav a:hover {
         color: hsl(210, 40%, 40%);
+    }
+
+    .codecademy a:hover {
+        color: hsl(210, 30%, 60%);
+        text-decoration: 2px underline solid hsl(210, 30%, 60%);
     }
 
     .cv-text a:hover, #submit:hover, .my-socials a:hover, #back-to-top:hover {
