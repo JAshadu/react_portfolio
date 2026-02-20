@@ -280,6 +280,7 @@ header.active nav a {
     font-size: 1.6rem;
     border: 1px solid hsl(210, 35%, 35%);
     border-radius: 2rem;
+    margin: 8px 0;
 }
 
 .cv-preview {
@@ -356,6 +357,7 @@ header.active nav a {
     background-color: white;
     border: 1px solid hsl(210, 35%, 35%);
     border-radius: 2rem;
+    margin: 8px 0;
 }
 
 footer {
@@ -394,6 +396,7 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 8px 0;
 }
 
 .my-socials {
@@ -408,6 +411,7 @@ footer div {
     align-items: center;
     border: 1px solid transparent;
     border-radius: 8px;
+    margin: 8px 0;
 }
 
 .my-socials a img {
@@ -434,7 +438,7 @@ footer div {
         background-color: hsl(210, 40%, 40%);
         color: white;
         border: 1px solid white;
-        box-shadow: 0 0 4px hsl(0, 0%, 50%);
+        box-shadow: 0 0 8px hsl(0, 0%, 50%);
     }
 
     .cv-text a:hover {
