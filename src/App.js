@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header className={header ? 'header active' : 'header'}>
-        <a id='home' href='/#'><span>J</span><span>A</span><span>s</span><span>h</span><span>a</span><span>d</span><span>u</span></a>
+        <a id='home' href='/#'>JAshadu</a>
         <nav>
           <a href='/#about'>About</a>
           <a href='/#projects'>Projects</a>

@@ -47,6 +47,8 @@ header.active {
 #home {
     margin: 0 2rem;
     font-size: 2rem;
+    padding: 0 4px;
+    border-radius: 4px;
 }
 
 header.active #home {
@@ -57,6 +59,11 @@ nav {
     display: flex;
     gap: 2rem;
     padding: 1.5rem 2rem;
+}
+
+nav a {
+    padding: 0 4px;
+    border-radius: 4px;
 }
 
 header.active nav a {
@@ -420,12 +427,9 @@ footer div {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    #home span:hover, header.active #home span:hover {
+    #home:hover, header.active #home:hover, nav a:hover, header.active nav a:hover {
         color: hsl(210, 40%, 40%);
-    }
-
-    nav a:hover, header.active nav a:hover {
-        color: hsl(210, 40%, 40%);
+        background-color: white;
     }
 
     .codecademy a:hover {
