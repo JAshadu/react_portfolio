@@ -10,3 +10,16 @@
     padding: 1rem;
     color: white;
 }
+
+@media only screen and (min-width: 1600px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {
+    .skill h4 {
+        border-radius: 0.9rem;
+        padding: 0.9rem;
+    }
+}

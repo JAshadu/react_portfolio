@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .front-card ul, .back-card ul {
@@ -36,5 +36,23 @@
 
     .front-card:hover, .back-card:hover {
         background-color: hsl(210, 40%, 40%);
+    }
+}
+
+@media only screen and (min-width: 1600px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 70%;
+        height: 420px;
+    }
+
+    .back-card li {
+        padding: 4px 0;
+        font-size: 1.1em;
     }
 }

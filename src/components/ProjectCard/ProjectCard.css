@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -28,11 +28,12 @@
 .project-card h3 {
     background-color: hsl(210, 35%, 35%);
     color: white;
-    width: 60%;
+    min-width: 60%;
+    max-width: 65%;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     text-align: center;
-    padding: 8px 0;
+    padding: 8px 2px;
 }
 
 .project-card span {
@@ -114,10 +115,67 @@
 
 .project-card p {
     padding: 0 0 3rem;
+    text-align: center;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .project-card span:hover {
         cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 1600px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
+
+@media only screen and (max-width: 480px) {
+    .project-card {
+        width: 80%;
+        height: 60%;
+    }
+
+    .project-card span {
+        font-size: 1.4rem;
+    }
+
+    .project-card-middle {
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+        gap: 1.4rem;
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .project-links, .project-skills {
+        width: 80%;
+    }
+
+    .project-card-middle .project-links a {
+        width: 80%;
+    }
+
+    .project-card-middle img {
+        height: 50%;
+        width: 90%;
+    }
+
+    .project-skills {
+        gap: 4px;
+        width: 100%;
+    }
+
+    .project-skills .skill h4 {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .project-card p {
+        padding: 0rem 1rem;
+        font-size: 1em;
+        position: relative;
+        bottom: 2rem;
     }
 }

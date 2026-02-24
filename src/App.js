@@ -28,16 +28,44 @@ function App() {
 
   window.addEventListener('scroll', changeHeaderBackground)
 
+  const [burger, setBurger] = useState(false)
+  const [menuDiv, setMenuDiv] = useState(false)
+  const [clickedMenu, setClickedMenu] = useState(false)
+
+  const showMenu = () => {
+    if(!clickedMenu) {
+      setBurger(true)
+      setMenuDiv(true)
+    }
+    else {
+      setBurger(false)
+      setMenuDiv(false)
+    }
+    setClickedMenu(!clickedMenu)
+  }
+
+  const hideMenu = () => {
+    setBurger(false)
+    setMenuDiv(false)
+  }
+
   return (
     <div className="App">
       <header className={header ? 'header active' : 'header'}>
         <a id='home' href='/#'>JAshadu</a>
-        <nav>
-          <a href='/#about'>About</a>
-          <a href='/#projects'>Projects</a>
-          <a href='/#cv'>CV</a>
-          <a href='/#contact'>Contact</a>
-        </nav>
+        <div className={burger ? 'burger active' : 'burger'} onClick={showMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className={menuDiv ? 'menuDiv active' : 'menuDiv'}>
+          <nav className='menu'>
+            <a href='/#about' onClick={hideMenu}>About</a>
+            <a href='/#projects' onClick={hideMenu}>Projects</a>
+            <a href='/#cv' onClick={hideMenu}>CV</a>
+            <a href='/#contact' onClick={hideMenu}>Contact</a>
+          </nav>
+        </div>
       </header>
       <main>
         <div className='main-section' id='intro'>
