@@ -15,7 +15,7 @@ function ProjectCard(props) {
                 <span onClick={props.closeCard}>X</span>
                 <div className='project-card-middle'>
                     <div className='project-links'>
-                        {props.links.project && (<a className='project-link' href={props.links.project} onClick={closePortfolioCard}>Open Project</a>)}
+                        {props.links.project && (<a className='project-link' href={props.links.project} target='_blank' rel='noopener noreferrer' onClick={closePortfolioCard}>Open Project</a>)}
                         {props.links.github && (<a className='project-github' href={props.links.github} target='_blank' rel='noopener noreferrer'>GitHub Repository</a>)}
                     </div>
                     <img src={props.img} alt={`Preview of ${props.title} project`}></img>

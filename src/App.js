@@ -119,7 +119,7 @@ function App() {
         <div className='main-section' id='cv'>
           <div className='cv-text'>
             <h2>My CV</h2>
-            <a href={cvLink}>View CV</a>
+            <a href={cvLink} target='_blank' rel='noopener noreferrer'>View CV</a>
           </div>
           <div className='cv-preview'>
             <img src={cvImg} alt='Preview of CV'></img>
@@ -144,9 +144,9 @@ function App() {
           <a href='/#' id='back-to-top'>Back To Top</a>
         </div>
         <div className='my-socials'>
-          <a href='https://www.linkedin.com/in/joseph-a-9360763a1'><img src={linkedinImg} alt='Link to LinkedIn Profile'></img></a>
-          <a href='https://github.com/JAshadu'><img src={githubImg} id='github-logo' alt='Link to GitHub Profile'></img></a>
-          <a href='https://www.instagram.com/jb.ash_'><img src={instaImg} alt='Link to Instagram Profile'></img></a>
+          <a href='https://www.linkedin.com/in/joseph-a-9360763a1' target='_blank' rel='noopener noreferrer'><img src={linkedinImg} alt='Link to LinkedIn Profile'></img></a>
+          <a href='https://github.com/JAshadu' target='_blank' rel='noopener noreferrer'><img src={githubImg} id='github-logo' alt='Link to GitHub Profile'></img></a>
+          <a href='https://www.instagram.com/jb.ash_' target='_blank' rel='noopener noreferrer'><img src={instaImg} alt='Link to Instagram Profile'></img></a>
         </div>
       </footer>
     </div>
