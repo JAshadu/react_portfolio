@@ -7,7 +7,7 @@ import { ContactUs } from './resources/ContactUs';
 import techSkills from './resources/techSkills';
 import projectInfo from './resources/projectInfo';
 import cardInfo from './resources/cardInfo';
-import cvImg from './resources/cv screenshot.jpg';
+import cvImg from './resources/cv_screenshot.png';
 import cvLink from './resources/Joseph Ashadu (CV).pdf';
 import emailBanner from './resources/white email banner.svg';
 import linkedinImg from './resources/linkedin logo copy.png';
@@ -86,18 +86,18 @@ function App() {
           <div className='about-text'>
             <div className='journey'>
               <h2>About Me...</h2>
-              <p>I started learning how to code in June 2024. At first, I thought that this would just become another hobby of mine, but soon after, I found myself wanting to change my entire career. With a love for problem-solving and a genuine interest in technology, I'm confident that pursuing software engineering was the right decision.</p>
-              <p>I'm currently building my skills in both Front-End and Back-End Development and I'm excited to continue growing as a developer.</p>
+              <p>I am a self-taught software developer currently going through a career change. I've been a delivery driver for 3+ years, and although I love to drive I always knew this wasn't what I wanted to do career wise. That's when my friend introduced me to coding. I've always been fascinated by technology, so when told that I could learn how to build an app from scratch, my interest was piqued.</p>
+              <p>I have frontend knowledge of HTML, CSS and JavaScript, and I'm currently developing knowledge of backend technologies.</p>
             </div>
             <div className='about-course'>
               <div className='codecademy'>
                 <h3>Current Course: <a href='https://www.codecademy.com/learn/paths/full-stack-engineer-career-path' target='_blank' rel='noopener noreferrer'>Full-Stack Engineer Codecademy</a></h3>
                 <div className='progress'>
-                  <h4>Progress: <span>52% Complete</span></h4>
+                  <h4>Progress: <span>60% Complete</span></h4>
                   <div className='progress-bar'>
                     <div id='current-progress'></div>
                   </div>
-                  <em>*Last updated: 20th February 2026</em>
+                  <em>*Last updated: 20th October 2026</em>
                 </div>
               </div>
             </div>
